@@ -1,0 +1,73 @@
+.cell{
+    width: 106.25px;
+    height: 106.25px;
+    margin: .5rem;
+    border-radius: 3px;
+    background: rgba(238, 228, 218, 0.35);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+.row{
+    flex-shrink: 0;
+    align-items: space-around;
+    justify-content: space-around;
+}
+.gameboard{
+    display: inline-flex;
+    flex-wrap: nowrap;
+    border-radius: 5px;
+    background-color: #725AC1;
+    justify-content: center;
+}
+body{
+    text-align: center;
+    background-color: #242038;
+    font-family: Arial, Helvetica, sans-serif;
+    color:#FBFEF9;
+    width:30%;
+    margin:auto;
+}
+
+#startNew{
+    background-color: #684bc9;
+    padding: 1em;
+    color:#FBFEF9;
+     text-decoration: none;
+    border: none;
+    margin:1em;
+    border-radius: 8px;
+}
+#startNew:hover{
+    background-color: #8877c2;
+    animation-name: stretch;
+
+    box-shadow: 0px 0px 1px #777;
+
+}
+
+.animate{
+    animation-name: stretch;
+    animation-duration: .3s; 
+    animation-timing-function: ease-out; 
+    animation-delay: 0;
+    animation-direction: alternate;
+    animation-fill-mode: none;
+    animation-play-state: running;
+  
+}
+@keyframes stretch {
+    0% {
+      transform: scale(.1);
+      border-radius: 100%;
+    }
+    50% {
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
